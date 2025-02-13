@@ -19,8 +19,6 @@ This repository accompanies our research paper (Assessing the Reliability of LLM
   - [Evaluation](#evaluation)
 - [Configuration](#configuration)
 - [License](#license)
-- [Citation](#citation)
-- [Contact](#contact)
 
 ## Requirements
 
