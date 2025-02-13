@@ -85,8 +85,8 @@ pip install vllm rouge_score matplotlib tigerscore prometheus axolotl
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/FRUIT.git
-   cd FRUIT
+   git clone https://github.com/paheli/faith-update-llm.git
+   cd faith-update-llm
    ```
 
 2. **Install required packages:**  
