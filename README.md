@@ -134,7 +134,7 @@ After generating predictions, evaluate them by running:
 python evaluation/evaluate_generated.py
 ```
 
-This will produce graphs and various metrics (including ROUGE scores via `update_rouge.py`).
+This will produce graphs and various metrics (including UpdateROUGE scores via `update_rouge.py`).
 
 ## Configuration
 
