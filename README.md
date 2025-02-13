@@ -76,7 +76,7 @@ pip install vllm rouge_score matplotlib tigerscore prometheus axolotl
   
 - **Dataset Preparation:**  
   The `dataset.py` script in **dataset_prep** generates the necessary `.pkl` file to obtain all predictions.  
-  The original dataset can be found in the [original fruit repository](https://github.com/Horea94/Fruit-Images-Dataset). *(If your dataset is different, update this link accordingly.)*
+  The original dataset can be found in the [original fruit repository](https://github.com/Horea94/Fruit-Images-Dataset). 
 
 ## Getting Started
 
