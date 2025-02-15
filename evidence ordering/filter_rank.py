@@ -13,7 +13,7 @@ resume_from = 0
 if __name__ == "__main__":
     split = "gold"
     
-    gold_dataset = load_dataset_pkl(f"/fs/scratch/rb_bd_dlp_rng-dl01_cr_AIM_employees/students/tty3kor/fruit/dataset/{split}.pkl")[resume_from:]
+    gold_dataset = load_dataset_pkl(f"{split}.pkl")[resume_from:]
 
     filter_model = SentenceTransformer("all-MiniLM-L6-v2")
     for article in tqdm(gold_dataset, total=len(gold_dataset), desc="filtering and ranking"):
