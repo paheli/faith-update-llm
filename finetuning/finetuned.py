@@ -21,10 +21,10 @@ Updated Article: """)
 if __name__ == "__main__":
     split = "gold"
     
-    gold_dataset = load_dataset_pkl(f"/fs/scratch/rb_bd_dlp_rng-dl01_cr_AIM_employees/students/tty3kor/fruit/dataset/{split}.pkl")[resume_from:]
+    gold_dataset = load_dataset_pkl(f"{split}.pkl")[resume_from:]
     sampling_params = SamplingParams(max_tokens=5000, temperature=0, min_tokens=10)
 
-    llm = LLM(model="/fs/scratch/rb_bd_dlp_rng-dl01_cr_AIM_employees/students/tty3kor/fruit/lora_out/merged", dtype="half")
+    llm = LLM(model="merged_model", dtype="half")
 
     
     with open(f"llama3-8b-finetuned-lora-predictions-{split}.jsonl", "w" if not resume_from else "a") as f:
