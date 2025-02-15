@@ -7,7 +7,7 @@ import json
 if __name__ == "__main__":
     continue_from = 561
 
-    dataset = load_dataset_pkl("/fs/scratch/rb_bd_dlp_rng-dl01_cr_AIM_employees/students/tty3kor/fruit/dataset/gold.pkl")
+    dataset = load_dataset_pkl("gold.pkl")
     sampling_params = SamplingParams(max_tokens=5000, temperature=0, min_tokens=10)
 
     tiger_evaluations: dict[str, str] = {}
