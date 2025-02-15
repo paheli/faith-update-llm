@@ -1,6 +1,6 @@
 from dataset import *
 
-train_dataset = load_dataset_pkl("/fs/scratch/rb_bd_dlp_rng-dl01_cr_AIM_employees/students/tty3kor/fruit/dataset/train.pkl")
+train_dataset = load_dataset_pkl("train.pkl")
 
 length_bins = {}
 
