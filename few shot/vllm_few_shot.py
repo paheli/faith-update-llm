@@ -26,7 +26,7 @@ resume_from = 0
 if __name__ == "__main__":
     split = "gold"
     
-    gold_dataset = load_dataset_pkl(f"/fs/scratch/rb_bd_dlp_rng-dl01_cr_AIM_employees/students/tty3kor/fruit/dataset/{split}.pkl")[resume_from:]
+    gold_dataset = load_dataset_pkl(f"{split}.pkl")[resume_from:]
     sampling_params = SamplingParams(max_tokens=8000, temperature=0, min_tokens=10)
 
     llm = LLM(model="unsloth/llama-3-8b-Instruct", dtype="half", enforce_eager=True)
