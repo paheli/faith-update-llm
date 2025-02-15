@@ -24,7 +24,7 @@ score_rubric = SCORE_RUBRIC_TEMPLATE.format(**rubric_data)
 
 split = "test-sampled"
     
-dataset = load_dataset_pkl(f"/fs/scratch/rb_bd_dlp_rng-dl01_cr_AIM_employees/students/tty3kor/fruit/dataset/{split}.pkl")
+dataset = load_dataset_pkl(f"{split}.pkl")
 dataset = {str(i.id): i for i in dataset}
 instructions = []
 responses = []
